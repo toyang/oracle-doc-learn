@@ -34,3 +34,9 @@ insert into t values(seqtest.nextval,....)
 - `ALTER TABLE`和`CREATE TABLE`语句的列的默认值（`DEFAULT`）
 
 - `CHECK`约束的条件中
+
+#### sequence使用例子： ####
+
+- `SELECT employees_seq.nextval FROM DUAL;`    *--查询序列的下一个值*
+
+- `INSERT INTO employees VALUES (employees_seq.nextval, 'John', 'Doe', 'jdoe', '555-1212');`*--使用在insert语句中*
